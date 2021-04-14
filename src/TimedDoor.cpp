@@ -36,9 +36,7 @@ int TimedDoor::getTime() const {
   return iTimeout;
 }
 
-DoorTimerAdapter::DoorTimerAdapter(TimedDoor& a) {
-  door = a;
-}
+DoorTimerAdapter::DoorTimerAdapter(TimedDoor& a) : door(a) {}
 
 void Timer::sleep(int t) {
   time_t tic = clock();
