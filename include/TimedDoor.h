@@ -1,5 +1,4 @@
-// Copyright 2021 GHA Test Team
-
+// Copyright 2021 Ilya Urtyukov
 #ifndef INCLUDE_TIMEDDOOR_H_
 #define INCLUDE_TIMEDDOOR_H_
 
@@ -40,6 +39,7 @@ class TimedDoor : public Door {
   void lock();
   void DoorTimeOut();
   void throwState();
+  int getTime() const;
 };
 
 class Timer {
