@@ -23,7 +23,7 @@ void TimedDoor::lock() {
   opened = false;
 }
 
-void TimedDoor::DoorTimeOut() const {
+void TimedDoor::DoorTimeOut() {
   throw std::string("close the door!");
 }
 
